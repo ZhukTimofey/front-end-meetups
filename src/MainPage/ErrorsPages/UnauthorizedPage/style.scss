@@ -1,0 +1,25 @@
+@import "../../../mixins.scss";
+
+.unauthorized-wrapper {
+  width: 30%;
+  margin: 0 auto;
+  color: #3c4861;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.unauthorized-header {
+  margin: 0 0 10px;
+  font-size: 100px;
+}
+.unauthorized-button {
+  @include primary-button;
+  font-size: 24px;
+  padding: 5px 10px;
+  margin-top: 30px;
+}
+.unauthorized {
+  font-size: 24px;
+}

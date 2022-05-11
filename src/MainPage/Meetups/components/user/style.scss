@@ -1,0 +1,15 @@
+.avatar {
+  display: flex;
+  align-items: center;
+  & .profile-avatar {
+    font-size: 10px;
+    padding: 8px 6px;
+    border-radius: 50px;
+    background: #8a98e8;
+    color: #ffffff;
+    margin-right: 5px;
+  }
+  & .profile-avatar-text {
+    line-height: 10px;
+  }
+}

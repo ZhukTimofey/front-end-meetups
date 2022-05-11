@@ -1,0 +1,81 @@
+@import "../../../../mixins.scss";
+
+.creation-page-dates {
+  width: 100%;
+  display: flex;
+  & label {
+    font-size: 13px;
+    color: #aab6ca;
+  }
+  & input {
+    @include grey-input;
+    padding: 12px;
+    outline: 0;
+    width: 90%;
+    margin: 8px 0 0 0;
+    &:active {
+      background: #ffffff;
+      box-sizing: border-box;
+      border-radius: 4px;
+    }
+    &:hover {
+      background: #ffffff;
+      box-sizing: border-box;
+      border-radius: 4px;
+    }
+  }
+  & .date-start {
+    width: 223px;
+    margin-right: 20px;
+    & input {
+      width: 100%;
+    }
+  }
+  & .date-finish {
+    width: 223px;
+
+    margin-left: 20px;
+
+    & input {
+      width: 100%;
+    }
+  }
+}
+
+.dropzone {
+  margin: 24px 0 32px 0;
+  @include dropzone;
+  & .dropzone-rules {
+    font-size: 10px;
+    color: #aab6ca;
+  }
+  & .dropzone-description {
+    font-size: 13px;
+    color: #5b6887;
+  }
+}
+.creation-page-additional-form {
+  font-size: 14px;
+  background: #ffffff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 40px 0 40px;
+  margin-bottom: 24px;
+  & label {
+    font-size: 13px;
+    color: #aab6ca;
+    padding-bottom: 8px;
+  }
+  & input {
+    padding: 12px;
+    @include input-for-creation-page;
+  }
+  & .place-input {
+    margin-bottom: 16px;
+  }
+}
+.downloaded-image-label {
+  padding: 16px 0;
+}

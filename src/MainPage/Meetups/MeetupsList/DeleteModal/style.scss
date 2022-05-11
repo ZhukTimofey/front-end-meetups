@@ -1,0 +1,55 @@
+@import "../../../../mixins.scss";
+.delete-modal-shadow {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-color: #000;
+  opacity: 0.7;
+}
+.delete-modal-wrapper {
+  position: fixed;
+  width: 25%;
+  border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 12px 20px 16px;
+}
+.delete-modal-text {
+  color: #848fa5;
+  text-align: left;
+}
+.delete-modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+.delete-modal-no-button {
+  padding: 6px 16px;
+  margin-right: 16px;
+  @include default-button;
+}
+.delete-modal-yes-button {
+  padding: 6px 16px;
+  @include primary-button;
+}
+.close-delete-modal {
+  cursor: pointer;
+  color: #848fa5;
+}
+.delete-modal-cancel {
+  font-size: 13px;
+  margin: 4px 0 8px;
+}
+.delete-modal-info {
+  padding: 8px 0;
+}
+.delete-modal-header {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

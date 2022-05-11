@@ -1,0 +1,23 @@
+@import "../node_modules/modern-normalize/modern-normalize.css";
+
+body {
+  background-color: #f4f6fc;
+}
+.main-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.errors {
+  color: red;
+  display: flex;
+  font-size: 12px;
+  padding: 10px;
+  align-items: center;
+  & .errors-text {
+    height: 10px;
+  }
+}
+.hidden {
+  opacity: 0;
+}

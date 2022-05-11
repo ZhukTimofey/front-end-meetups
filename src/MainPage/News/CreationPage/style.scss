@@ -1,0 +1,60 @@
+@import "../../../mixins";
+.news-creation-wrapper {
+  margin: 0 auto;
+  width: 30%;
+}
+.news-creation-form {
+  @include theme-bg;
+  padding: 33px 40px 43px;
+  display: flex;
+  flex-direction: column;
+  & label {
+    color: #aab6ca;
+    font-size: 13px;
+  }
+  & input {
+    @include input-for-creation-page;
+    padding: 12px;
+    margin: 8px 0 4px;
+  }
+  & textarea {
+    @include input-for-creation-page;
+    padding: 12px;
+    height: 110px;
+    resize: none;
+    margin: 8px 0 4px;
+  }
+}
+.news-creation-buttons {
+  margin-top: 24px;
+  @include theme-bg;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  & .news-creation-page-back {
+    padding: 12px 55px;
+    @include default-button;
+  }
+  & .news-creation-page-create {
+    padding: 12px 48px;
+    @include primary-button;
+  }
+}
+.news-creation-header {
+  margin: 62px 0 48px;
+  font-size: 24px;
+  color: #3c4861;
+  text-align: center;
+}
+.dropzone-news {
+  margin-top: 8px;
+  @include dropzone;
+  & .dropzone-rules {
+    font-size: 10px;
+    color: #aab6ca;
+  }
+  & .dropzone-description {
+    font-size: 13px;
+    color: #5b6887;
+  }
+}

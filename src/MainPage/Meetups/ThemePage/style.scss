@@ -1,0 +1,82 @@
+@import "../../../mixins.scss";
+.theme-wrapper {
+  width: 550px;
+  margin: 0 auto;
+  & label {
+    color: #aab6ca;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+}
+.theme-head {
+  margin: 86px 0 48px 0;
+  font-weight: 700;
+  color: #3c4861;
+  font-size: 24px;
+  text-align: center;
+}
+.theme-subject {
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Rubik";
+  @include theme-bg;
+  padding: 26px 29px 37px 24px;
+
+  margin-bottom: 10px;
+}
+.theme-author {
+  padding: 24px 0 28px 0;
+  @include theme-bg;
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 19px;
+}
+.theme-author-avatar {
+  padding: 10px;
+  border-radius: 50px;
+  background: #8a98e8;
+  color: #ffffff;
+  margin-left: 12px;
+  margin-right: 5px;
+}
+.theme-author-avatar-text {
+  font-size: 13px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+.theme-description {
+  background: #ffffff;
+  padding: 22px 63px 18px 23px;
+  @include theme-bg;
+  margin-bottom: 24px;
+}
+
+.theme-button-section {
+  background: #ffffff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 26px 0 26px;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.back-button {
+  padding: 12px 46px;
+  @include default-button;
+}
+.feedback-button {
+  margin: 0 9px;
+  padding: 12px 26px;
+  @include secondary-button;
+}
+.publish-theme {
+  @include secondary-button;
+  padding: 12px 26px;
+}
+.delete-button {
+  padding: 12px 26px;
+  @include secondary-button;
+}

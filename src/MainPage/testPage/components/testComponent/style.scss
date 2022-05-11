@@ -1,0 +1,27 @@
+.news-test-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 5px;
+  padding:12px;
+  margin-bottom:12px;
+}
+.news-test-text {
+  margin: 12px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.news-test-header{
+  font-size: 20PX;
+}
+.news-test-icons {
+  display: flex;
+  justify-content: space-between;
+  & svg {
+    cursor: pointer;
+    margin:0 5px;
+  }
+}

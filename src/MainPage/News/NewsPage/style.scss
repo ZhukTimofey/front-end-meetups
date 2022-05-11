@@ -1,0 +1,54 @@
+@import "../../../mixins";
+.news-page-wrapper {
+  margin: 0 auto;
+  width: 30%;
+}
+.news-page-header {
+  margin: 62px 0 48px;
+  font-size: 24px;
+  color: #3c4861;
+  text-align: center;
+}
+.news-page-content {
+  @include theme-bg;
+  color: #3c4861;
+  padding: 23px 24px 56px 34px;
+  margin-bottom: 16px;
+  & h2 {
+    font-size: 20px;
+    margin: 0 0 41px;
+  }
+  & p {
+    white-space: pre-wrap;
+    font-size: 16px;
+  }
+}
+.news-page-img-wrapper {
+  text-align: center;
+}
+.news-page-img {
+  max-width: 100%;
+}
+.news-page-buttons {
+  @include theme-bg;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 61px;
+  & .news-page-chiefs-buttons {
+    display: flex;
+  }
+  & .news-page-button-back {
+    @include default-button;
+    padding: 12px 46px;
+  }
+  & .news-page-button-edit {
+    @include secondary-button;
+    padding: 11px 13px;
+  }
+  & .news-page-button-delete {
+    @include primary-button;
+    padding: 11px 24px;
+    margin-right: 12px;
+  }
+}

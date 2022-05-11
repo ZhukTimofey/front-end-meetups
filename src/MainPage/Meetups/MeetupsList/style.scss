@@ -1,0 +1,43 @@
+.meetups-list-wrapper {
+  margin-bottom: 59px;
+}
+
+.meetups-list-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 0 16px 0;
+  align-items: center;
+  color: #5b6887;
+  & span {
+    margin-left: 4px;
+  }
+  & button {
+    padding: 11px 19px 13px 20px;
+    color: #8065ec;
+    border: 1px solid #8065ec;
+    border-radius: 5px;
+    background-color: #f4f6fc;
+    &:hover {
+      background: rgba(128, 101, 236, 0.2);
+      mix-blend-mode: normal;
+      border: 1px solid #8065ec;
+      border-radius: 5px;
+    }
+    &:active {
+      background: rgba(128, 101, 236, 0.4);
+      mix-blend-mode: normal;
+      border: 1px solid #8065ec;
+      border-radius: 5px;
+    }
+
+    &:disabled {
+      background: rgba(128, 101, 236, 0.4);
+      mix-blend-mode: normal;
+      border: 1px solid #8065ec;
+      border-radius: 5px;
+    }
+  }
+}
+.meetups-list-body {
+  margin-bottom: 59px;
+}

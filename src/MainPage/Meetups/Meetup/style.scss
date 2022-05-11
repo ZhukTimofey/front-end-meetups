@@ -1,0 +1,86 @@
+.meetups-background {
+  cursor: pointer;
+  margin-top: 16px;
+  padding: 0 24px 19px 24px;
+  background: #ffffff;
+  box-shadow: 0 4px 9px rgba(194, 203, 218, 0.25);
+  border-radius: 6px;
+  color: #848fa5;
+  & h2 {
+    color: #3c4861;
+    padding: 25px 0 5px 0;
+  }
+  & .meetup-component-text {
+    margin-top: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-bottom: 16px;
+  }
+  & p {
+    font-size: 14px;
+    color: #848fa5;
+  }
+}
+.meetupsAuthor {
+  padding-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & p {
+    font-size: 14px;
+    color: #5b6887;
+  }
+}
+
+.meetupsPlace {
+  padding-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & p {
+    font-size: 14px;
+    color: #5b6887;
+  }
+}
+
+.meetupsPlace {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  & p {
+    font-size: 14px;
+    color: #5b6887;
+  }
+}
+
+.feedback {
+  padding-top: 8px;
+  display: flex;
+  align-items: flex-end;
+  .feedback-number {
+    margin-right: 4px;
+  }
+
+  & svg {
+    margin-right: 10px;
+  }
+}
+.location-time {
+  display: flex;
+  align-items: center;
+  & > img {
+    padding: 0 6px;
+  }
+}
+.meetup-icons {
+  position: relative;
+  padding: 0 0 0 10px;
+}
+.meetup-icon-edit {
+  margin-left: 20px;
+}

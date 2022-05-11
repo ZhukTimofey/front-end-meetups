@@ -1,0 +1,30 @@
+.wrapper-meetups {
+  color: black;
+  width: 33%;
+  margin: 0 auto;
+  & h1 {
+    text-align: center;
+    padding: 70px 0 55px 0;
+    font-size: 24px;
+  }
+}
+.navigation {
+  .meetups-list-active {
+    border-bottom: #8065ec 2px solid;
+    width: 25%;
+  }
+  display: flex;
+  justify-content: space-around;
+  a {
+    width: 25%;
+    text-align: center;
+    font-size: 16px;
+    color: #848fa5;
+    text-decoration: none;
+    padding-bottom: 16px;
+  }
+  border-bottom: 1px solid #e2e7ef;
+}
+.number-themes {
+  padding: 36px 0 25px 0;
+}

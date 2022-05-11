@@ -1,0 +1,40 @@
+@import "../../../../mixins";
+.theme-participants-wrapper {
+  color: #fff;
+  display: flex;
+  padding: 17px 15px;
+  background: #ffffff;
+  align-items: center;
+  @include theme-bg;
+  & .theme-participants {
+    width: 90%;
+    overflow: hidden;
+    display: flex;
+  }
+  & .theme-participant-avatar {
+    padding: 10px;
+    border-radius: 50px;
+    background: #8a98e8;
+    color: #ffffff;
+    margin-right: 12px;
+  }
+  & .theme-participant-avatar-text {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+.theme-participant-amount-wrapper {
+  background-color: #aab6ca;
+  border-radius: 50%;
+  padding: 7.5px;
+}
+.theme-participant-amount {
+  text-align: center;
+
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+}
