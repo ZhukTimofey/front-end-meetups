@@ -53,14 +53,6 @@ const Header: React.FC<Props> = observer(() => {
           >
             <FormattedMessage id="news" defaultMessage="Новости" />
           </NavLink>
-          <NavLink
-            className={(navData) =>
-              navData.isActive ? "header-nav-active" : ""
-            }
-            to="/test"
-          >
-            <FormattedMessage id="test" />
-          </NavLink>
         </div>
         <div>
           {userStore.isAuth ? (

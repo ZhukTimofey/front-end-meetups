@@ -18,7 +18,6 @@ import "./style.scss";
 import ModalLogin from "./ModalLogin";
 import PrivateOutlet from "../components/PrivateRoute";
 import Forbidden from "./ErrorsPages/Forbiden";
-import Test from "./testPage";
 
 type Props = {};
 const MainPageLayout: React.FC<Props> = observer(() => {
@@ -70,17 +69,6 @@ const MainPageLayout: React.FC<Props> = observer(() => {
                     path={"/unauthorized"}
                   >
                     <News />
-                  </PrivateOutlet>
-                }
-              />
-              <Route
-                path="/test/*"
-                element={
-                  <PrivateOutlet
-                    isValid={userStore.isAuth}
-                    path={"/unauthorized"}
-                  >
-                    <Test />
                   </PrivateOutlet>
                 }
               />
